@@ -1,0 +1,209 @@
+/* Estilos para o cabeçalho */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.search-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #8e44ad;
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #000;
+}
+
+/* Estilos para o banner */
+.banner {
+  width: 100%;
+  max-height: 550px; /* Defina a altura máxima desejada para o banner */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Estilos para a seção de produtos */
+.product-section {
+  padding: 20px;
+}
+
+.product-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.product-list {
+  display: inline-block;
+}
+
+.product-list li {
+  display: inline-block;
+  margin-right: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.product-list li img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.product-list li h4 {
+  margin-bottom: 5px;
+}
+
+.product-list li p {
+  margin-bottom: 10px;
+}
+
+.product-list li button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #8e44ad;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Estilos para a seção de mais vendidos */
+.best-sellers-section {
+  padding: 20px;
+}
+
+/* Estilos para a seção de adoção */
+.adoption-section {
+  padding: 20px;
+}
+
+.adoption-section h2,
+.adoption-section h3 {
+  margin-bottom: 10px;
+}
+
+.pet-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.pet-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pet-list li {
+  width: 250px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pet-list li img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Estilos para a seção de contato */
+.contact-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-box {
+  display: inline-block;
+  margin: 20px;
+}
+
+.contact-box i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-box h3 {
+  margin-bottom: 5px;
+}
+
+.contact-box p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+/* Restante do código CSS... */
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}

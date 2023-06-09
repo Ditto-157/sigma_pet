@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+<div id="back-button-container">
+    <button id="back-button">&lt; Voltar</button>
+  </div>
+ <div id="content">
+    <h1>Agendamento Interativo</h1>
+    <h2>Agende sua próxima consulta</h2>
+    <hr>
+    <div id="filter">
+      <button id="filter-button">Filtro</button>
+      <div id="filter-menu">
+        <ul>
+          <li>
+            Opção 1
+            <ul class="submenu">
+              <li>Subopção 1</li>
+              <li>Subopção 2</li>
+              <li>Subopção 3</li>
+            </ul>
+          </li>
+          <li>
+            Opção 2
+            <ul class="submenu">
+              <li>Subopção 1</li>
+              <li>Subopção 2</li>
+              <li>Subopção 3</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  <div id="container">
+    <div id="calendar-container">
+      <div id="month-selector">
+        <button onclick="previousMonth()">&lt;</button>
+        <h2 id="current-month"></h2>
+        <button onclick="nextMonth()">&gt;</button>
+      </div>
+
+      <table class="calendar">
+        <tbody id="calendar-body">
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div id="time-slots-container">
+      <div class="time-slot-column">
+        <button class="time-slot" data-time="9:00">9:00</button>
+        <button class="time-slot" data-time="10:00">10:00</button>
+        <button class="time-slot" data-time="11:00">11:00</button>
+        <button class="time-slot" data-time="12:00">12:00</button>
+      </div>
+      <div class="time-slot-column">
+        <button class="time-slot" data-time="13:00">13:00</button>
+        <button class="time-slot" data-time="14:00">14:00</button>
+        <button class="time-slot" data-time="15:00">15:00</button>
+        <button class="time-slot" data-time="16:00">16:00</button>
+        <button class="time-slot" data-time="17:00">17:00</button>
+      </div>
+    </div>
+    <div id="details-container">
+        <h3>Detalhes</h3>
+        <p id="selected-date">Data: </p>
+        <p id="selected-time">Hora: </p>
+        <p>Duracão:</p>
+      </div>
+      <button id="next-button">Próximo</button>
+  </div>
+
+  <h2>Agendamento</h2>
+  <div id="selected-date"></div>
+  <div id="selected-time"></div>
+
+  <script src="agendamento.js"></script>
+</body>
+</html>

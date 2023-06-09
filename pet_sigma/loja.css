@@ -1,0 +1,157 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.search-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #8e44ad;
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+  z-index: 2;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #000;
+}
+
+/* Estilos para telas grandes */
+.main-content {
+  padding-top: 40px;
+}
+
+.section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  width: 200px;
+}
+
+.item img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.item-details {
+  text-align: left;
+}
+
+.green-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .main-content {
+    padding-top: 20px;
+  }
+
+  .section {
+    margin-bottom: 10px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .green-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
